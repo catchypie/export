@@ -1049,7 +1049,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-left: 40px;
-        color: #111; /* was #fff */
+        color: #fff; /* was #fff */
       }
     /* About Section Title and Intro */
   
