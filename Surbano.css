@@ -3,8 +3,8 @@
 /* Root variables for the dark theme */
 :root {
   /* Main Color Palette */
-  --fuchsia-pink: #FC2281;
-  --burgundy: #900830;
+  --fuchsia-pink: #FF6B35;
+  --burgundy: #D64550;
   --jet-black: #100E0F;
   --peachy-cream: #FFC896;
   --cotton-candy: #FFAEF1;
@@ -34,6 +34,15 @@
   --cyber-card: #23203a;
   --cyber-border: #4b5ca7;
   --cyber-highlight: #f48cb7;
+  
+  --dark-purple: #2E0854;
+  --light-purple: #E6E6FA;
+  --orange-light: #FF8C42;
+  --orange-dark: #D64550;
+  --orange-accent: #FF6B35;
+  --orange-glow: rgba(255, 107, 53, 0.5);
+  --orange-border: rgba(255, 107, 53, 0.3);
+  --orange-background: rgba(255, 107, 53, 0.1);
 }
 
 .back-button {
@@ -953,57 +962,21 @@ body {
 .navmenu a {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
-  font-size: 15px;
-  font-family: 'Orbitron', sans-serif;
-  color: #b700ff;
+  padding: 0.5rem;
+  color: #FF6B35;
   text-decoration: none;
-  background: rgba(0, 10, 30, 0.7);
-  border: 1px solid rgba(183, 0, 255, 0.3);
-  border-radius: 5px;
-  width: 56px;
-  transition: width 0.3s ease;
-  overflow: hidden;
-  position: relative;
-  backdrop-filter: blur(5px);
-  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
-.navmenu a i {
-  font-size: 20px;
-  margin-right: 20px;
-  color: #b700ff;
-  text-shadow: 0 0 5px rgba(183, 0, 255, 0.5);
-  position: relative;
-  z-index: 2;
-  min-width: 20px;
+.navmenu a:hover {
+  transform: translateX(5px);
+  color: #FF8C42;
+  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 }
 
-.navmenu a span {
-  display: none;
-  color: #b700ff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  z-index: 2;
-  margin-left: 5px; /* Add some space after icon */
-  white-space: nowrap; /* Prevent text wrapping */
-}
-
-.navmenu a:hover,
 .navmenu .active {
-  width: 230px;
-  background: rgba(0, 20, 40, 0.9);
-  border-color: rgba(183, 0, 255, 0.6);
-  box-shadow: 
-      0 0 20px rgba(183, 0, 255, 0.2),
-      inset 0 0 15px rgba(183, 0, 255, 0.1);
-}
-
-.navmenu a:hover span,
-.navmenu .active span {
-  display: inline-block;
+  color: #FF6B35;
+  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
 }
 
 .navmenu a::before,
@@ -2380,7 +2353,7 @@ transform: translate(-50%, -50%);
 .orb::before {
 width: 120%;
 height: 120%;
-background: radial-gradient(circle, #ff8be6 0%, transparent 80%);
+background: radial-gradient(circle, #FF6B35 0%, transparent 80%);
 opacity: 0.5;
 filter: blur(8px);
 z-index: 2;
@@ -2388,7 +2361,7 @@ z-index: 2;
 .orb::after {
 width: 180%;
 height: 180%;
-background: radial-gradient(circle, #a259ff 0%, transparent 80%);
+background: radial-gradient(circle, #FF8C42 0%, transparent 80%);
 opacity: 0.3;
 filter: blur(18px);
 z-index: 1;
