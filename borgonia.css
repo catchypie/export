@@ -788,7 +788,7 @@
       main section {
         padding: 80px 30px;
         border-bottom: 1px solid #ccc;
-        color: #111; /* added */
+        color: #fff; /* added */
       }
       
       main section h2 {
